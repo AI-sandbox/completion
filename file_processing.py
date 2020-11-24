@@ -133,7 +133,7 @@ def mask(ancestry_matrix, gt_matrix, unique_ancestries):
     for ancestry in unique_ancestries:
         masked = np.empty(ancestry_matrix.shape[0] * ancestry_matrix.shape[1], dtype=np.float32)
         masked[:] = np.NaN
-        arg = np.argwhere(ancestry_matrix.reshape(-1) == ancestry)
+        arg = ancestry_matrix.reshape(-1) == ancestry
         masked[arg] = gt_matrix.reshape(-1)[arg]
         masked_matrices[ancestry] = masked.reshape(ancestry_matrix.shape)
         print("Masking for ancestry --- %s seconds ---" % (time.time() - start_time))
