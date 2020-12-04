@@ -142,9 +142,9 @@ def mask(ancestry_matrix, gt_matrix, unique_ancestries):
 
 def average_parent_snps(masked_matrix):
     num_samples, num_snps = masked_matrix.shape
-    average_masked_matrix = np.zeros((int(num_samples / 2), num_snps))
+    average_masked_matrix = np.zeros((int(num_samples / 2), num_snps), dtype = np.float32)
     for i in range(int(num_samples / 2)):
-        average_masked_matrix[i,:] = np.nanmean(masked_matrix[2*i:(2*i + 2),:], axis=0)
+        average_masked_matrix[i,:] = np.nanmean(masked_matrix[2*i:(2*i + 2),:], axis=0, dtype = np.float32)
     return average_masked_matrix
 
 def remove_AB_indIDs(ind_IDs):
