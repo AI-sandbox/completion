@@ -40,3 +40,6 @@ NOTE: The parameters file must have all the above parameters. Each line in the p
 NOTE: There are 2 acceptable formats for SNP indices in the Beagle file: 
 1. rsid: `rs` followed by the id (integer). For example, `rs12345`.
 2. position: chromosome number (integer) followed by `_`, followed by the position (integer). For example, `10_12345`.
+
+
+NOTICE: This software is available for use free of charge for academic research use only. Commercial users, for profit companies or consultants, and non-profit institutions not qualifying as "academic research" must contact the Stanford Office of Technology Licensing for a separate license. This applies to this repository directly and any other repository that includes source, executables, or git commands that pull/clone this repository as part of its function. Such repositories, whether ours or others, must include this notice. Academic users may fork this repository and modify and improve to suit their research needs, but also inherit these terms and must include a licensing notice to that effect.
