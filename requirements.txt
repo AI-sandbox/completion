@@ -5,4 +5,4 @@ plotly==4.6.0
 plotly-express==0.4.1
 scikit-allel==1.2.1
 scikit-learn==0.22.1
-scipy==1.4.1
+scipy==1.10.0
