@@ -125,7 +125,7 @@ def process_vcf(vcf_file):
         ind_IDs.append(sample + '_B')
     ind_IDs = np.array(ind_IDs)
     positions = vcf['variants/POS'].tolist()
-    return gt_matrix, rs_IDs, ind_IDs, positions
+    return gt_matrix, ind_IDs, rs_IDs, positions
 
 def mask(ancestry_matrix, gt_matrix, unique_ancestries):
     start_time = time.time()
